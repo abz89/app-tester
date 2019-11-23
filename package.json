@@ -1,0 +1,25 @@
+{
+  "name": "app-tester",
+  "version": "0.1.0",
+  "description": "Just Another App(s) Tester for Quality Control Utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 0 ./test/bootstrap.js --recursive test"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "e2e",
+    "test"
+  ],
+  "author": "Abz <abz_aniki@yahoo.co.id>",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.2",
+    "puppeteer-core": "^2.0.0"
+  }
+}
