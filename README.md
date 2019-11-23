@@ -38,3 +38,5 @@ Inspired by [Automated UI/UX Testing with Puppeteer Mocha and Chai](https://medi
 ```javascript
 yarn test
 ```
+
+![app-tester](https://github.com/abz89/app-tester/blob/master/app%20tester.png)

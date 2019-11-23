@@ -13,8 +13,7 @@ before(async () => {
     // slowMo: 100,
     timeout: 5000,
     // args: ['--start-maximized', '--window-size=1280,800'],
-    executablePath:
-      '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
+    executablePath: process.env.CHROME_PATH
   });
 });
 
