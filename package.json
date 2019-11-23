@@ -4,6 +4,7 @@
   "description": "Just Another App(s) Tester for Quality Control Utility",
   "main": "index.js",
   "scripts": {
+    "pretest": "rimraf result-*.png",
     "test": "mocha --timeout 0 ./test/bootstrap.js --recursive test"
   },
   "keywords": [
@@ -20,6 +21,7 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
     "mocha": "^6.2.2",
-    "puppeteer-core": "^2.0.0"
+    "puppeteer-core": "^2.0.0",
+    "rimraf": "^3.0.0"
   }
 }
