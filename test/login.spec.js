@@ -158,4 +158,19 @@ describe('Test Pairing Process', async () => {
         expect(res.body).to.have.property('_id');
       });
   });
+
+  it('should clear database', async () => {
+    const expect = global.expect;
+
+    chai
+      .request(process.env.BACKEND_URL)
+      .get('/auth/fresh')
+      .end((err, res) => {
+        expect(err).to.be.null;
+        expect(res).to.have.status(200);
+
+        expect(res.body).to.have.property('fresh');
+        expect(res.body.fresh).to.be.true;
+      });
+  });
 });
